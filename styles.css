@@ -1,148 +1,115 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
 }
-
 
 body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('https://e1.pxfuel.com/desktop-wallpaper/233/810/desktop-wallpaper-dark-cloud-lake-and-black-and-white-dark-clouds.jpg');
+    min-height: 100vh;
+    background: url('https://wallpaperaccess.com/full/2109.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    overflow: hidden;
 }
+ 
 
 .wrapper{
-    background-color: aqua;
-    padding: 45px 60px;
-    font-size: 20px;
-    max-width: 1000px;
-    border-radius: 30px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .7);
-    box-shadow: 0 0 3px #fff;
-    backdrop-filter: blur(10px);
+    width: 420px;
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    border: 1.5px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, .2);
 }
 
-h1{
-    padding-bottom: 20px;
-    color: #fff;
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
 }
 
-.form{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.information{
-    margin-right: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.input-box{
-    border: 0;
-    height: 40px;
-    margin: 10px;
-
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
 }
 
 .input-box input{
-    height: 40px;
-    width: 400px;
-    outline: none;
-    border-radius: 30px;
-    padding-left: 10px;
-    border: 2px solid rgba(255, 255, 255, .7);
+    width: 100%;
+    height: 100%;
     background: transparent;
-    color: #fff;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
     font-size: 16px;
-    
-
+    color: #fff;
+    padding: 20px 45px 20px 20px;
 }
 
 .input-box input::placeholder{
     color: #fff;
 }
 
-.phone input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
-    -webkit-appearance: none;
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 29%;
+    font-size: 20px;
 }
 
-.textarea-box{
-    position: relative;
-    left: -15px;
+.wrapper .remerber-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px; /* margin-top, margin x, margin-bottom*/
 }
 
-.textarea-box textarea{
-    resize: none;
-    padding: 10px;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    border: 2px solid rgba(255, 255, 255, .7);
-    background: transparent;
-    font-size: 14px;
+.remerber-forgot label input{
+    margin-left: 3px;
+    accent-color: #fff;
+}
+
+.remerber-forgot a{
     color: #fff;
-
+    text-decoration: none;
 }
 
-.textarea-box textarea::placeholder{
-    color: #fff;
+.remerber-forgot a:hover{
+    text-decoration: underline;
 }
 
-
-.message{
-    width: 400px;
-    height: 200px;
-
-}
-
-.message textarea{
-    width: 400px;
-    height: 200px;
-}
-
-.btn-box{
+.wrapper .btn{
     width: 100%;
-    margin-top: 35px;
-    position: relative;
-}
-
-.btn{
-    width: 200px;
-    margin-left: 635.2px;
-    height: 35px;
-    border-radius: 20px;
+    height: 45px;
+    border-radius: 40px;
     border: none;
+    background: #fff;
     outline: none;
-    border: 2px solid rgba(255, 255, 255, .7);
-    background: transparent;
-    color: #fff;
-}
-
-.btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
 }
 
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px; /* margin-top, margin x, margin-bottom*/
+}
 
-@media (max-width: 1000px){
-    .wrapper{
-        width: min-content;
-    }
-    .btn{
-        width: 200px;
-        margin-left: 10.8px;
-    }
-    .message textarea{
-        border-radius: 30px;
-        margin-top: 7px;
-    }
-    
+.wrapper .register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.wrapper .register-link p a:hover{
+    text-decoration: underline;
 }
