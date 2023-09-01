@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://e1.pxfuel.com/desktop-wallpaper/233/810/desktop-wallpaper-dark-cloud-lake-and-black-and-white-dark-clouds.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.wrapper{
+    background-color: aqua;
+    padding: 45px 60px;
+    font-size: 20px;
+    max-width: 1000px;
+    border-radius: 30px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .7);
+    box-shadow: 0 0 3px #fff;
+    backdrop-filter: blur(10px);
+}
+
+h1{
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.information{
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-box{
+    border: 0;
+    height: 40px;
+    margin: 10px;
+
+}
+
+.input-box input{
+    height: 40px;
+    width: 400px;
+    outline: none;
+    border-radius: 30px;
+    padding-left: 10px;
+    border: 2px solid rgba(255, 255, 255, .7);
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    
+
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.phone input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.textarea-box{
+    position: relative;
+    left: -15px;
+}
+
+.textarea-box textarea{
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, .7);
+    background: transparent;
+    font-size: 14px;
+    color: #fff;
+
+}
+
+.textarea-box textarea::placeholder{
+    color: #fff;
+}
+
+
+.message{
+    width: 400px;
+    height: 200px;
+
+}
+
+.message textarea{
+    width: 400px;
+    height: 200px;
+}
+
+.btn-box{
+    width: 100%;
+    margin-top: 35px;
+    position: relative;
+}
+
+.btn{
+    width: 200px;
+    margin-left: 635.2px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .7);
+    background: transparent;
+    color: #fff;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+
+@media (max-width: 1000px){
+    .wrapper{
+        width: min-content;
+    }
+    .btn{
+        width: 200px;
+        margin-left: 10.8px;
+    }
+    .message textarea{
+        border-radius: 30px;
+        margin-top: 7px;
+    }
+    
+}
